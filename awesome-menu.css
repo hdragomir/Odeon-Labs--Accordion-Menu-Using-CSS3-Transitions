@@ -1,0 +1,60 @@
+#what-is-this{
+    margin: 50px 0;
+    text-align: center;
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+    width: 300px;
+    margin: 10px auto;
+}
+
+
+ul li a{
+    display: block;
+}
+
+
+ul li{
+    line-height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+
+ul li.hover a{
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -wekbit-border-radius: 5px;
+    padding: 4px 10px;
+}
+
+ul:hover li.content, ul:hover li.content:nth-of-type(2){
+    height: 0;
+}
+
+
+ul li.content{
+    height: 0;
+    overflow: hidden;
+    background: #333;
+    color: #eef;
+    -o-transition: height .5s .2s ease-in-out;
+    -webkit-transition: height .5s .2s ease-in-out;
+    -moz-transition: height .5s .2s ease-in-out;
+    transition: height .5s .2s ease-in-out;
+}
+
+
+ul li.content:nth-of-type(2){
+    height: 200px;
+}
+
+
+ul li:hover + li.content, li.content:hover, li.content:focus{
+    height: 200px!important;
+}
